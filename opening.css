@@ -18,17 +18,7 @@ html, body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    animation-name: opening-swipe-left;
-    animation-delay: 2s;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
     z-index: 3;
-}
-
-@keyframes opening-swipe-left {
-    100%{
-        transform: translateX(-100%);
-    }
 }
 
 .logo-svg {

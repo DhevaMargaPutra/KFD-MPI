@@ -1,0 +1,41 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.transition {
+    height: 100%;
+    width: 100%;
+    position: fixed; 
+    top: 0px;
+    transform: translateX(-100%);
+}
+
+.materi-trans {
+    background-color: lightgreen;
+    background-image: url('/material.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.evaluasi-trans {
+    background-color: lightcoral;
+    background-image: url('/exercise.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.simulasi-trans {
+    background-color: lightskyblue;
+    background-image: url('/camera.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tentang-trans {
+    background-color: lightpink;
+    background-image: url('/phone.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -12,35 +12,36 @@
 </head>
 <body>
     <!-- Opening Screen -->
-    <!-- <div class="opening-screen">
+    <div class="opening-screen animated slideOutLeft delay-2s fast">
         <svg class="logo-svg">
             <image class="logo" href="camera-logo.png"/>
         </svg>
         <svg class="title-svg">
             <text class="title" text-anchor="middle" dominant-baseline="middle">Komposisi Foto Digital</text>
         </svg>
-    </div> -->
+    </div>
 
     <!-- Mainmenu Screen -->
     <div class="mainmenu-screen">
         <div class="desk-container">
             <img class="desk" src="desk03.png" alt="desk">
-            <a href="#" class="menu materi animated bounceIn" onmouseover="showLabel(this);" onmouseout="hideLabel(this);">
+            <a href="#" onclick="goTo('materi');" class="menu materi animated bounceIn" onmouseover="showLabel(this);" onmouseout="hideLabel(this);">
                 <div class="label">Materi</div>
             </a>
-            <a href="#" class="menu evaluasi animated bounceIn" onmouseover="showLabel(this);" onmouseout="hideLabel(this);">
+            <a href="#" onclick="goTo('evaluasi');" class="menu evaluasi animated bounceIn" onmouseover="showLabel(this);" onmouseout="hideLabel(this);">
                 <div class="label">Evaluasi</div>
             </a>
-            <a href="#" class="menu simulasi animated bounceIn" onmouseover="showLabel(this);" onmouseout="hideLabel(this);">
+            <a href="#" onclick="goTo('simulasi');" class="menu simulasi animated bounceIn" onmouseover="showLabel(this);" onmouseout="hideLabel(this);">
                 <div class="label">Simulasi</div>
             </a>
-            <a href="#" class="menu profil animated bounceIn" onmouseover="showLabel(this);" onmouseout="hideLabel(this);">
-                <div class="label">Profil</div>
+            <a href="#" onclick="goTo('tentang');" class="menu tentang animated bounceIn" onmouseover="showLabel(this);" onmouseout="hideLabel(this);">
+                <div class="label">Tentang kami</div>
             </a>
         </div>
     </div>
 
-    <!-- Transition -->
+    <!-- Transition Screen -->
+    <div id="transition" class="transition"></div>
 
     <script src="mainmenu.js"></script>
 </body>

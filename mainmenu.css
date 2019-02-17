@@ -1,7 +1,7 @@
 html, body {
+    margin: 0px;
     height: 100%;
     width: 100%;
-    margin: 0px;
 }
 
 @font-face {
@@ -12,6 +12,8 @@ html, body {
 .mainmenu-screen {
     height: 100%;
     width: 100%;
+    position: fixed;
+    top: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +64,7 @@ html, body {
     background-image: url(/camera.png);
 }
 
-.profil {
+.tentang {
     right: 7%;
     bottom: 35%;
     width: 9%;
