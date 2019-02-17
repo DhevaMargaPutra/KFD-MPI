@@ -22,6 +22,7 @@ html, body {
     animation-delay: 2s;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
+    z-index: 3;
 }
 
 @keyframes opening-swipe-left {

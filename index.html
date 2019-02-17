@@ -4,24 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="opening.css">
     <link rel="stylesheet" href="mainmenu.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="transition.css">
+    <title>KFD - main menu</title>
 </head>
 <body>
     <!-- Opening Screen -->
-    <div class="opening-screen">
+    <!-- <div class="opening-screen">
         <svg class="logo-svg">
             <image class="logo" href="camera-logo.png"/>
         </svg>
         <svg class="title-svg">
             <text class="title" text-anchor="middle" dominant-baseline="middle">Komposisi Foto Digital</text>
         </svg>
-    </div>
+    </div> -->
 
     <!-- Mainmenu Screen -->
-    <div>
-
+    <div class="mainmenu-screen">
+        <div class="desk-container">
+            <img class="desk" src="desk03.png" alt="desk">
+            <a href="#" class="menu materi animated bounceIn" onmouseover="showLabel(this);" onmouseout="hideLabel(this);">
+                <div class="label">Materi</div>
+            </a>
+            <a href="#" class="menu evaluasi animated bounceIn" onmouseover="showLabel(this);" onmouseout="hideLabel(this);">
+                <div class="label">Evaluasi</div>
+            </a>
+            <a href="#" class="menu simulasi animated bounceIn" onmouseover="showLabel(this);" onmouseout="hideLabel(this);">
+                <div class="label">Simulasi</div>
+            </a>
+            <a href="#" class="menu profil animated bounceIn" onmouseover="showLabel(this);" onmouseout="hideLabel(this);">
+                <div class="label">Profil</div>
+            </a>
+        </div>
     </div>
+
+    <!-- Transition -->
+
+    <script src="mainmenu.js"></script>
 </body>
 </html>
