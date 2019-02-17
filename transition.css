@@ -14,28 +14,28 @@ html, body {
 
 .materi-trans {
     background-color: lightgreen;
-    background-image: url('/material.png');
+    background-image: url('Images/material.png');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .evaluasi-trans {
     background-color: lightcoral;
-    background-image: url('/exercise.png');
+    background-image: url('Images/exercise.png');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .simulasi-trans {
     background-color: lightskyblue;
-    background-image: url('/camera.png');
+    background-image: url('Images/camera.png');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .tentang-trans {
     background-color: lightpink;
-    background-image: url('/phone.png');
+    background-image: url('Images/phone.png');
     background-repeat: no-repeat;
     background-position: center;
 }

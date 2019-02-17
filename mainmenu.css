@@ -6,7 +6,7 @@ html, body {
 
 @font-face {
     font-family: 'MyFont';
-    src: url('Abel-Regular.ttf') format('truetype');
+    src: url('Fonts/Abel-Regular.ttf') format('truetype');
 }
 
 .mainmenu-screen {
@@ -45,7 +45,7 @@ html, body {
     top: 50%;
     height: 20%;
     width: 20%;
-    background-image: url(/material.png);
+    background-image: url('Images/material.png');
 }
 
 .evaluasi {
@@ -53,7 +53,7 @@ html, body {
     left: 5%;
     width: 20%;
     height: 20%;
-    background-image: url(/exercise.png);
+    background-image: url('Images/exercise.png');
 }
 
 .simulasi {
@@ -61,7 +61,7 @@ html, body {
     left: 45%;
     width: 15%;
     height: 15%;
-    background-image: url(/camera.png);
+    background-image: url('Images/camera.png');
 }
 
 .tentang {
@@ -69,7 +69,7 @@ html, body {
     bottom: 35%;
     width: 9%;
     height: 15%;
-    background-image: url(/phone.png);
+    background-image: url('Images/phone.png');
 }
 
 @keyframes material-pop {
