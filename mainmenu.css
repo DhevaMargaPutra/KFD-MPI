@@ -72,11 +72,11 @@ html, body {
     background-image: url('Images/phone.png');
 }
 
-@keyframes material-pop {
+/* @keyframes material-pop {
     100% {
 
     }
-}
+} */
 
 .label {
     color: black;

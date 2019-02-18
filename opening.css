@@ -28,8 +28,9 @@ html, body {
 }
 
 .logo {
-    height: inherit;
-    width: inherit;
+    background-image: url('Images/camera-logo.png');
+    height: 15rem;
+    width: 17rem;
     animation-name: logo-up;
     animation-duration: 1s;
     animation-fill-mode: forwards;

@@ -1,0 +1,113 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    font-family: 'MyFont', sans-serif;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('Fonts/Abel-Regular.ttf') format('truetype');
+}
+
+.table {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: mediumseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chapter {
+    /* background-color: yellow; */
+    position: relative;
+    height: 80%;
+    width: 25rem;
+}
+
+.paper {
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: -5px 5px 10px 0 rgb(0, 0, 0, 0.5);
+}
+
+.foreground {
+    /* position: fixed; */
+    position: absolute;
+    top: 0%;
+    z-index: 2;
+}
+
+.background {
+    position: absolute;
+    top: 0%;
+    /* z-index: 1; */
+}
+
+.navHal {
+    position: relative;
+    height: 50%;
+    z-index: 3;
+}
+
+.next {
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.mySlideOutDown {
+    animation-name: mySlideOutDown;
+    animation-fill-mode: forwards;
+    animation-duration: 800ms;
+}
+
+.mySlideInUp {
+    animation-name: slideInUp;
+}
+
+@keyframes mySlideOutDown {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(150%);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translate3d(0, 150%, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.prev {
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.teks {
+    padding: 0 2rem 2rem 2rem;
+}
+
+.judul {
+    text-align: center;
+    padding: 0;
+    margin: 2rem 0 2rem 0;
+}
+
+.gambar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.halaman {
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+}

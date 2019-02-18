@@ -14,7 +14,8 @@
     <!-- Opening Screen -->
     <div class="opening-screen animated slideOutLeft delay-2s fast">
         <svg class="logo-svg">
-            <image class="logo" href="Images/camera-logo.png"/>
+            <image width="270" height="240" class="logo" xlink:href="Images/camera-logo.png" preserveAspectRatio="xMidYMid meet" />
+            <!-- <image class="logo" xlink:href="Images/camera-logo.png" /> -->
         </svg>
         <svg class="title-svg">
             <text class="title" text-anchor="middle" dominant-baseline="middle">Komposisi Foto Digital</text>
@@ -41,7 +42,7 @@
     </div>
 
     <!-- Transition Screen -->
-    <div id="transition" class="transition"></div>
+    <div id="transition" class="transition" style="transform: translateX(-100%);"></div>
 
     <script src="mainmenu.js"></script>
 </body>
