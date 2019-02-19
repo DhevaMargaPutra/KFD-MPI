@@ -21,10 +21,43 @@ html, body {
 }
 
 .chapter {
-    /* background-color: yellow; */
+    background-color: yellow;
     position: relative;
     height: 80%;
     width: 25rem;
+}
+
+.next-chapter {
+    position: fixed;
+    z-index: 2;
+    left: 95%;
+}
+
+.prev-chapter {
+    position: fixed;
+    z-index: 2;
+    right: 95%;
+}
+
+.label {
+    color: black;
+    background-color: white;
+    padding: 0.5rem;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    /* width: 100%; */
+    display: none;
+    font-size: 1.5rem;
+    box-shadow: -5px 5px 30px 0 rgb(0, 0, 0, 0.5);
+}
+
+.label-kanan {
+    left: -45%;
+}
+
+.label-kiri {
+    right: -45%;
 }
 
 .paper {
@@ -38,7 +71,7 @@ html, body {
     /* position: fixed; */
     position: absolute;
     top: 0%;
-    z-index: 2;
+    z-index: 3;
 }
 
 .background {
@@ -50,7 +83,7 @@ html, body {
 .navHal {
     position: relative;
     height: 50%;
-    z-index: 3;
+    z-index: 4;
 }
 
 .next {
@@ -65,6 +98,12 @@ html, body {
 
 .mySlideInUp {
     animation-name: mySlideInUp;
+    animation-fill-mode: forwards;
+    animation-duration: 700ms;
+}
+
+.nextChapter {
+    animation-name: nextChapter;
     animation-fill-mode: forwards;
     animation-duration: 700ms;
 }
@@ -87,12 +126,15 @@ html, body {
     }
 }
 
+@keyframes nextChapter {
+
+}
+
 .prev {
     background-color: rgb(0, 0, 0, 0);
 }
 
 .teks {
-    /* overflow: hidden; */
     text-align: justify;
     white-space: pre-wrap;
     padding: 0 2rem 2rem 2rem;
@@ -108,6 +150,7 @@ html, body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-height: 7rem;
 }
 
 .halaman {

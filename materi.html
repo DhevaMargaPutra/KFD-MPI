@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" href="animate.css"> -->
+    <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="transition.css">
     <link rel="stylesheet" href="materi.css">
     <title>KFD - materi</title>
 </head>
 <body>
     <!-- Transition -->
-    <!-- <div class="transition materi-trans animated slideOutLeft delay-1s"></div> -->
+    <div class="transition materi-trans animated slideOutLeft delay-1s"></div>
 
     <!-- Materi -->
     <div class="table">
+        <!-- Current Chapter -->
         <div class="chapter">
             <a href="#"><div onclick="prevPage()" class="navHal prev"></div></a>
             <a href="#"><div onclick="nextPage()" class="navHal next"></div></a>
@@ -30,6 +31,16 @@
                 <p class="teks">xx</p>
                 <p class="halaman">2</p>
             </div>
+        </div>
+        <!-- Next Chapter -->
+        <div onclick="changeChapter('next');" onmouseover="showLabel(this);" onmouseout="hideLabel(this);" class="chapter next-chapter">
+            <div class="label label-kanan">Bab Selanjutnya</div>
+            <div class="paper"></div>
+        </div>
+        <!-- Prev Chapter -->
+        <div onclick="changeChapter('prev');" onmouseover="showLabel(this);" onmouseout="hideLabel(this);" class="chapter prev-chapter">
+            <div class="label label-kiri">Bab Sebelumnya</div>
+            <div class="paper"></div>
         </div>
     </div>
 

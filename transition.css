@@ -10,6 +10,7 @@ html, body {
     position: fixed; 
     top: 0px;
     left: 0px;
+    z-index: 5;
     /* transform: translateX(-100%); */
 }
 
