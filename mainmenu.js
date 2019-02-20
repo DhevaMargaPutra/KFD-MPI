@@ -30,7 +30,7 @@ function goTo(menu) {
         case 'tentang':
             transitionDOM.classList.add('tentang-trans', 'animated', 'slideInRight');
             transitionDOM.addEventListener('animationend', function() {
-                document.location.href = 'simulasi.html';
+                document.location.href = 'tentang.html';
             });
             break;
         default:

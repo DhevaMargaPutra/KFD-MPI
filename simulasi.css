@@ -1,0 +1,19 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.simulasi-container {
+    height: 100%;
+    width: 100%;
+    background-color: deepskyblue;
+    display: flex;
+    align-items: center;
+}
+
+.panel {
+    height: 3rem;
+    width: 3rem;
+    background-color: yellow;
+}
